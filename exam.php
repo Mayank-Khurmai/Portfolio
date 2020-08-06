@@ -1,5 +1,5 @@
 <?php
 
-header("Location: https://mkkoss.000webhostapp.com/");
+header("Location: https://mkkoss.000webhostapp.com");
 
 ?>
