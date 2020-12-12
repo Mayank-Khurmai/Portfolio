@@ -1,396 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
-<meta lang="en-US" >
-<meta charset="utf-8">  
-<meta name="viewport" content="width=device-width, initial-scale=1.0">    
-<title>Mayank Khurmai</title>
-<style>
-*{
-    box-sizing: border-box;
-    text-decoration: none;
-}    
-#outer-box{
-        height: 100%;
-        width: 100%;
-        border-color: red;
-        border-width: 5px;
-        border-style: groove;    
-}  
-#portfolio-heading{    
-        font-family: sans-serif;
-        font-weight: bold;
-        color: aliceblue;
-        font-size: 50px;
-        text-align: center;
-}
-#profile-pic-div{
-        height: 300px;
-        width: 300px;
-        margin: 0 auto;
-        border-radius: 120px;
-        border-color: darkred;
-        background-image: url(profile-photo.jpg); 
-        content: cover;
-        border-width: 4px;
-        margin-bottom: 10px;
-        border-style: dashed;    
-}
-#profile-pic-div:hover{
-        height: 300px;
-        width: 300px;
-        margin: 0 auto;
-        filter: grayscale(90%);
-        border-radius: 120px;
-        border-color: darkred;
-        background-image: url(profile-photo.jpg); 
-        content: cover;
-        border-width: 4px;
-        margin-bottom: 10px;
-        border-style: dashed;    
-    }
-#main-content{
-        height: 615px;
-        width: 700px;
-        margin: 0 auto;
-        padding: 2px;
-        border-radius: 20px;
-        border-color: darkred;
-        border-width: 4px;
-        border-style: inset;    
-} 
-#details-content-div{
-        height: 80px;
-        width: 580px;
-        margin: 0 auto;
-        margin-bottom: 2px;
-        border-radius: 20px;
-        border-color: pink;
-        border-width: 2px;
-        border-style: dashed;    
-}
-#details-content{
-        font-family: sans-serif;
-        font-weight: bold;
-        color: aliceblue;
-        font-size: 35px;
-        text-align: center; 
-}    
-#details-main-info-table{
-        height: 460px;
-        width: 580px;
-        margin: 0 auto;
-        padding-top: 5px;
-        margin-bottom: 2px;
-        border-radius: 40px;
-        border-color: pink;
-        border-color: pink;
-        border-width: 2px;
-        border-style: dashed;    
-}
-#table1{
-        background-color: bisque;
-        height: 440px;
-        width: 480px;
-        border-color: pink;
-        border-width: 4px;
-        border-style: solid;
-        font-size: 18px;
-        font-family: sans-serif;
-        margin: 0 auto;
-    }   
-
-td{
-        border-bottom-color: grey;
-        border-bottom-width: 1px;
-        border-bottom-style: dashed;
-        font-size: 18px;
-        text-decoration: none;
-        font-family: sans-serif;
-        margin: 0 auto;
-    }
-#td1{
-        border-bottom-color: grey;
-        border-bottom-width: 1px;
-        border-bottom-style: dashed;
-        border-bottom-width: 50%;
-        font-size: 18px;
-        color: white;
-        text-decoration: none;
-        font-family: sans-serif;
-        margin: 0 auto;
-    }    
-#more-button-div{
-        height: 60px;
-        width: 580px;
-        margin: 0 auto;
-        margin-bottom: 2px;
-        border-radius: 20px;
-        border-color: pink;
-        border-width: 2px;
-        border-style: dashed;    
-}
-#more-button{
-        height: 50px;
-        width: 100px;
-        margin-top: 2px;
-        font-size: 20px;
-        font-weight: bold;
-        font-family: fantasy;
-        align-content: center;
-        margin-left: 43%;
-        border-radius: 5px;
-        border-color: red;
-        border-width: 1px;
-        border-style: solid;    
-}
-#after-click-more{
-        height: 700px;
-        width: 95%;
-        margin: 0 auto;
-        border-radius: 20px;    
-}
-#after-click-more-side1{
-        height: 680px;
-        width: 27%;
-        margin: 0 auto;
-        float: left;
-        border-radius: 20px;
-        border-color: red;
-        border-width: 4px;
-        border-style: double;    
-}  
-#after-click-more-side1-upper{
-        height: 250px;
-        width: 98%;
-        margin: 0 auto;
-        border-radius: 10px;   
-}
-#fa-address-book{
-        margin: 0 auto;
-        margin-top: 30px;
-        margin-left: 25%;
-        font-size: 200px;
-        color: white;
-        float: left;
-    }  
-#fa-table{
-        margin: 20px;
-        margin-left: 7px;
-        font-size: 20px;
-    color: white;
-        float: left;
-    }    
-#after-click-more-side1-lower{
-        height: 400px;
-        width: 98%;
-        margin: 0 auto;
-        border-radius: 10px;  
-}    
-#table2{
-        height: 410px;
-        width: 90%;
-        font-size: 18px;
-        font-family: sans-serif;
-        margin: 0 auto;
-    }    
-#after-click-more-side2{
-        height: 680px;
-        width: 73%;
-        margin: 0 auto;
-        float: left;
-        border-radius: 20px;
-        border-color: red;
-        border-width: 4px;
-        border-style: double;    
-}    
-#side2-three{
-        height: 220px;
-        width: 96%;
-        margin: 0 auto;   
-}
-#side2-three-one-header{
-        height: 50px;
-        width: 98%;
-        margin: 0 auto;   
-}    
-#side2-three-one-footer{
-        height: 170px;
-        width: 98%;
-        padding: 0px;
-        margin: 0 auto;    
-}
-#fa-skill{
-        margin: 10px;
-        font-size: 30px;
-        color: white;
-        float: left;
-    }    
-#skill-text{
-        margin-top: 12px;
-        float: left;
-        color: white;
-    }  
-hr{
-        color: white;
-        width: 90%;
-        border-style: dashed;
-    }     
-ul{
-        margin: 0px;
-        margin-top: 10px;
-        padding: 0px;
-        font-size: 20px;
-        color: white;
-        float: left;
-    } 
- li{
-        margin-left: 0px;
-        font-size: 20px;
-        color: white;
-        float: left;
-        clear: left;
-    }    
-    
-    
-</style>    
+        <title>Mayank Khurmai</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="mayank-khurmai.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body bgcolor="black">
 
-<div id="outer-box" class="bootstrap">
- 
-<h1 id="portfolio-heading">Portfolio</h1> 
-    
-<div id="profile-pic-div">
-</div>
-    
-<div id="main-content">
-  <div id="details-content-div">
-  <h1 id="details-content">Details Content</h1>
-  </div> 
-  <div id="details-main-info-table">
-      <table id="table1">
-      <tr>
-      <td>Name</td>
-      <td>Mayank Kumar Khurmai</td>
-      </tr>
-      <tr>
-      <td>Roll.No.</td>
-      <td>1802710064</td>
-      </tr>
-      <tr>
-      <td>Student No.</td>
-      <td>1810135</td>
-      </tr>
-      <tr>
-      <td>Year</td>
-      <td>2nd</td>
-      </tr>
-      <tr>
-      <td>Branch</td>
-      <td>Computer Science</td>
-      </tr>
-      <tr>
-      <td>Mobile No.</td>
-      <td>9720315564</td>
-      </tr>      
-      </table>
-    </div>
-    <div id="more-button-div">
-        <a href="#after-click-more"><button id="more-button">More....</button></a>
-    </div>
-</div>
-    
-<div id="after-click-more">
+<body>
 
-<div id="after-click-more-side1">
-    <div id="after-click-more-side1-upper">
-    <i class="fa fa-address-book" id="fa-address-book"></i>
-    </div>
-    <div id="after-click-more-side1-lower">
-     <table id="table2">
-      <tr>
-      <td><i class="fa fa-envelope" id="fa-table"></i></td>
-      <td id="td1">mayank8@gmail.com</td>
-      </tr>
-      <tr>
-      <td><i class="fa fa-phone" id="fa-table"></i></td>
-      <td id="td1">9720315564</td>
-      </tr>
-      <tr>
-      <td><i class="fa fa-map-marker" id="fa-table"></i></td>
-      <td id="td1">Upera - Hapur</td>
-      </tr>
-      <tr>
-      <td><i class="fa fa-globe" id="fa-table"></i></td>
-      <td id="td1">mayank_khurmai</td>
-      </tr>  
-      <tr>
-      <td><i class="fa fa-user" id="fa-table"></i></td>
-      <td id="td1">19 Years</td>
-      </tr>          
-      <tr>
-      <td><i class="fa fa-flag" id="fa-table"></i></td>
-      <td id="td1">India</td>
-      </tr>
-      </table>
-    </div>
-   
-</div>   
-<div id="after-click-more-side2">
-    
-<div id="side2-three">
-<div id="side2-three-one-header">
-<i class="fa fa-graduation-cap" id="fa-skill"></i>
-    <h2 id="skill-text">Skills :</h2>
-</div>  
-<div id="side2-three-one-footer">
-<ul type ="square">
-<li>HTML</li>    
-<li>CSS</li>
-<li>MySQL</li>
-<li>C Programming</li>
-<li>JavaScript</li>
-</ul>    
-</div>      
-</div>     
-    
-<hr>    
-    
-<div id="side2-three">
-<div id="side2-three-one-header">
-<i class="fa fa-graduation-cap" id="fa-skill"></i>
-    <h2 id="skill-text">Education :</h2>
-</div>  
-<div id="side2-three-one-footer">
-<ul type ="square">
-<li>2004-2006  :  Niskam Public School</li>
-<li>2006-18  :  Saint Anthony's School</li>    
-<li>2018-Present  :  AKGEC, Ghaziabad</li>
-</ul>    
-</div> 
-</div>
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                        <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                        data-target="#myNavbar">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">WebSiteName</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                                <ul class="nav navbar-nav">
+                                        <li class="active"><a href="#">Home</a></li>
+                                        <li class="dropdown">
+                                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span
+                                                                class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                        <li><a href="#">Page 1-1</a></li>
+                                                        <li><a href="#">Page 1-2</a></li>
+                                                        <li><a href="#">Page 1-3</a></li>
+                                                </ul>
+                                        </li>
+                                        <li><a href="#">Page 2</a></li>
+                                        <li><a href="#">Page 3</a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                                </ul>
+                        </div>
+                </div>
+        </nav>
 
-<hr>    
-    
-    <div id="side2-three">
-    <div id="side2-three-one-header">
-<i class="fa fa-language" id="fa-skill"></i>
-    <h2 id="skill-text">Language :</h2>
-</div>  
-<div id="side2-three-one-footer">
-<ul type ="square">
-<li>Hindi</li>    
-<li>English</li>
-<li>Punjabi</li>
-</ul>        
-</div>
-    </div>   
-</div>    
-</div>    
 
-</div>
-    
-</body>    
+
+</body>
+
 </html>
