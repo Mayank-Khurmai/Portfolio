@@ -82,3 +82,7 @@ body{
   }
 
   /* Dark Mode and Light Mode Switch Button End*/
+
+.main-home-container{
+    height: 100vh;
+}
