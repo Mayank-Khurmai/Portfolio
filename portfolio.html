@@ -5,23 +5,41 @@
         <title>Mayank Khurmai</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="mayank-khurmai.css">
-        <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet">
         <link rel="icon" href="mayank_khurmai.png" type="image/png">
+        <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="mayank-khurmai.css">
 </head>
 
 <body>
 
-        <div class="container-fluid">
+
+        <div class="container-fluid" style="padding-top: 10px;">
                 <div class="row">
-                        <div class="col-md-4">
-                                <a class="google-black-font text-white" href="#">Mayank Khurmai</a>
+                        <div class="col-md-1 border border-primary">
+                                                <div class="menu-icon-container" onclick="menu_icon_toggle(this)">
+                                                        <div class="bar1 custom-light-dark-bgcolor"></div>
+                                                        <div class="bar2 custom-light-dark-bgcolor"></div>
+                                                        <div class="bar3 custom-light-dark-bgcolor"></div>
+                                                        <div class="menu-icon-container-view custom-light-dark-textcolor">
+                                                                <div>
+                                                                        <ul style="list-style: none; font-weight: bold; font-size: 17px; line-height: 1.5;">
+                                                                                <li>Home</li>
+                                                                                <li>About</li>
+                                                                                <li>Services</li>
+                                                                                <li>Education</li>
+                                                                                <li>Experience</li>
+                                                                                <li>Projects</li>
+                                                                                <li>Contact</li>
+                                                                        </ul>
+                                                                </div>
+                                                        </div>
+                                                </div>
                         </div>
-                        <div class="col-md-7"></div>
+                        <div class="col-md-10"></div>
                         <div class="col-md-1">
                                 <label class="switch">
                                         <input type="checkbox">
@@ -35,7 +53,7 @@
         <div class="container bg-light pt-5 main-home-container">
                 <div class="row">
                         <div class="col-md-4 text-light">
-                                <h1>I'm</h1>
+                                <h1 class="google-black-font">I'm</h1>
                                 <h1>Mayank</h1>
                                 <h1>Khurmai</h1>
                         </div>
@@ -46,7 +64,13 @@
                 </div>
         </div>
 
+        <script>
 
+                function menu_icon_toggle(x) {
+                        x.classList.toggle("change");
+                }
+
+        </script>
 
 </body>
 
