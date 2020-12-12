@@ -13,8 +13,12 @@ body{
 }
 
 .complete-navbar{
-    opacity: 0.5;
+    opacity: 0.6S;
 }
+
+.google-black-font{
+    font-family: 'Black Ops One', cursive;
+    }
 
 /* Dark Mode and Light Mode Switch Button  */
 
