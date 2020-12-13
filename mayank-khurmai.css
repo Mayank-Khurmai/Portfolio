@@ -87,6 +87,16 @@ body{
 
 .main-home-container{
     height: 100vh;
+    border: 1px solid yellow;
+    padding-top: 200px;
+}
+
+.hireme-button{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(256, 76, 96);  
+    outline: none;  
+    border: none;
 }
 
 
@@ -129,16 +139,25 @@ body{
     color: white;
 }
 
-.menu-icon-container-view{
-    width: 260px;
-    height: 290px;
+
+.menu-container{
     background-color: rgba(0, 0 , 0, 1);
+    width: 200px;
+    height: 240px;
     position: absolute;
     top: 0;
     left: 0;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    padding-top: 70px;
-    padding-left: 40px;
+    border-bottom-left-radius: 40%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.dark-light-div{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-top: 10px;
+    padding-right: 10px;
 }
