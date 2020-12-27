@@ -14,14 +14,14 @@
         <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet">
 </head>
 
-<body class="custom-dark-bgcolor">
+<body class="light-switch-dark custom-dark-bgcolor" dark="0">
 
-        <div class="menu-container custom-dark-bgcolor">
+        <div class="light-switch-dark menu-container custom-dark-bgcolor">
                 <div class="menu-icon-container" onclick="menu_icon_toggle(this)">
                         <div class="bar1 custom-light-bgcolor"></div>
                         <div class="bar2 custom-light-bgcolor"></div>
                         <div class="bar3 custom-light-bgcolor"></div>
-                        <div class="menu-icon-container-view custom-light-textcolor">
+                        <div class="light-switch-dark menu-icon-container-view custom-light-textcolor">
                                 <ul style="list-style: none; font-weight: bold; font-size: 17px; line-height: 1.5;">
                                         <li>Home</li>
                                         <li>About</li>
@@ -37,7 +37,7 @@
 
         <div class="dark-light-div">
                 <label class="switch">
-                        <input type="checkbox" onchange="white_dark()">
+                        <input type="checkbox" id="light-switch-dark-checkbox" onchange="white_dark()" value="0">
                         <span class="slider round"></span>
                 </label>
         </div>
@@ -72,10 +72,25 @@
                 }
 
                 function white_dark(){
-                       var x = document.body;
-                       x.forea
-                       x.classList.add("custom-light-bgcolor");
-                       x.classList.remove("custom-dark-bgcolor");
+                        if(document.getElementById("light-switch-dark-checkbox").value == 0)
+                        {
+                                document.getElementById("light-switch-dark-checkbox").setAttribute("value", 1);
+                                var x = document.getElementsByClassName("light-switch-dark");
+                                for(i=0; i <x.length; i++){
+                                        x[i].classList.add("custom-light-bgcolor");
+                                        x[i].classList.remove("custom-dark-bgcolor");
+                                }                                         
+                        }
+                        else
+                        {
+                                document.getElementById("light-switch-dark-checkbox").setAttribute("value", 0);
+                                var x = document.getElementsByClassName("light-switch-dark");
+                                for(i=0; i <x.length; i++){
+                                        x[i].classList.add("custom-dark-bgcolor");
+                                        x[i].classList.remove("custom-light-bgcolor");
+                                }
+                        }
+                       
                 }
 
 
