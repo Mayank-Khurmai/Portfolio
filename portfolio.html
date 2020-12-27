@@ -37,7 +37,7 @@
 
         <div class="dark-light-div">
                 <label class="switch">
-                        <input type="checkbox">
+                        <input type="checkbox" onchange="white_dark()">
                         <span class="slider round"></span>
                 </label>
         </div>
@@ -51,9 +51,10 @@
                                 <span>I am Full Stack Developer</span>
                         </div>
                         <div class="col-md-7"></div>
-                        <div class="col-md-2" style="border: 1px solid yellow;">
-                                <div class="Social-media-link-icons p-4" style="border: 1px solid yellow;">
+                        <div class="col-md-2 main-home-container-rightmost" style="border: 1px solid yellow;">
+                                <div class="Social-media-link-icons main-home-container-social-icons" style="border: 1px solid yellow;">
                                         <span class="glyphicon glyphicon-user mx-4"></span>
+                                        <span class="glyphicon glyphicon-user"></span>
                                         <span class="glyphicon glyphicon-user"></span>
                                         <span class="glyphicon glyphicon-user"></span>
                                 </div>
@@ -66,8 +67,13 @@
 
         <script>
 
-                function menu_icon_toggle(x) {
+                function menu_icon_toggle(x){
                         x.classList.toggle("change");
+                }
+
+                function white_dark(){
+                        // document.getElementsByTagName("body").style.backgroundColor = "white";
+                        alert();
                 }
 
 

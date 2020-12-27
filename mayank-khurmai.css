@@ -91,6 +91,8 @@ body{
     padding-top: 200px;
 }
 
+.hire
+
 .hireme-button{
     padding: 10px;
     border-radius: 10px;
@@ -99,6 +101,11 @@ body{
     border: none;
 }
 
+.main-home-container-social-icons{
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
 
 
 /* Menu Icon Code Start */
@@ -160,4 +167,8 @@ body{
     right: 0px;
     padding-top: 10px;
     padding-right: 10px;
+}
+
+.main-home-container-rightmost{
+  margin: auto;
 }
