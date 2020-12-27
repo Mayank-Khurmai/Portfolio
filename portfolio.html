@@ -14,14 +14,14 @@
         <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="custom-dark-bgcolor">
 
-        <div class="menu-container">
+        <div class="menu-container custom-dark-bgcolor">
                 <div class="menu-icon-container" onclick="menu_icon_toggle(this)">
-                        <div class="bar1 custom-light-dark-bgcolor"></div>
-                        <div class="bar2 custom-light-dark-bgcolor"></div>
-                        <div class="bar3 custom-light-dark-bgcolor"></div>
-                        <div class="menu-icon-container-view custom-light-dark-textcolor">
+                        <div class="bar1 custom-light-bgcolor"></div>
+                        <div class="bar2 custom-light-bgcolor"></div>
+                        <div class="bar3 custom-light-bgcolor"></div>
+                        <div class="menu-icon-container-view custom-light-textcolor">
                                 <ul style="list-style: none; font-weight: bold; font-size: 17px; line-height: 1.5;">
                                         <li>Home</li>
                                         <li>About</li>
@@ -72,8 +72,10 @@
                 }
 
                 function white_dark(){
-                        // document.getElementsByTagName("body").style.backgroundColor = "white";
-                        alert();
+                       var x = document.body;
+                       x.forea
+                       x.classList.add("custom-light-bgcolor");
+                       x.classList.remove("custom-dark-bgcolor");
                 }
 
 

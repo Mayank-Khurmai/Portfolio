@@ -138,17 +138,24 @@ body{
 
   /* Menu Icon Code End */
 
-.custom-light-dark-bgcolor{
-    background-color: white;
+.custom-dark-bgcolor{
+    background-color: black;
 }
 
-.custom-light-dark-textcolor{
-    color: white;
+.custom-light-bgcolor{
+  background-color: white;
+}
+
+.custom-dark-textcolor{
+    color: black;
+}
+
+.custom-light-textcolor{
+     color: white;
 }
 
 
 .menu-container{
-    background-color: rgba(0, 0 , 0, 1);
     width: 200px;
     height: 240px;
     position: absolute;
