@@ -1,408 +1,395 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="dark">
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
-<meta lang="en-US" >
-<meta charset="utf-8">  
-<meta name="viewport" content="width=device-width, initial-scale=1.0">    
-<title>Mayank Khurmai</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-WDG2NMJRVL"></script>
-        <script>
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#05060a" />
 
-              gtag('config', 'G-WDG2NMJRVL');
-        </script>
-<style>
-*{
-    box-sizing: border-box;
-    text-decoration: none;
-}    
-#outer-box{
-        height: 100%;
-        width: 100%;
-        border-color: red;
-        border-width: 5px;
-        border-style: groove;    
-}  
-#portfolio-heading{    
-        font-family: sans-serif;
-        font-weight: bold;
-        color: aliceblue;
-        font-size: 50px;
-        text-align: center;
-}
-#profile-pic-div{
-        height: 300px;
-        width: 300px;
-        margin: 0 auto;
-        border-radius: 120px;
-        border-color: darkred;
-        background-image: url(profile-photo.jpg); 
-        content: cover;
-        border-width: 4px;
-        margin-bottom: 10px;
-        border-style: dashed;    
-}
-#profile-pic-div:hover{
-        height: 300px;
-        width: 300px;
-        margin: 0 auto;
-        filter: grayscale(90%);
-        border-radius: 120px;
-        border-color: darkred;
-        background-image: url(profile-photo.jpg); 
-        content: cover;
-        border-width: 4px;
-        margin-bottom: 10px;
-        border-style: dashed;    
-    }
-#main-content{
-        height: 615px;
-        width: 700px;
-        margin: 0 auto;
-        padding: 2px;
-        border-radius: 20px;
-        border-color: darkred;
-        border-width: 4px;
-        border-style: inset;    
-} 
-#details-content-div{
-        height: 80px;
-        width: 580px;
-        margin: 0 auto;
-        margin-bottom: 2px;
-        border-radius: 20px;
-        border-color: pink;
-        border-width: 2px;
-        border-style: dashed;    
-}
-#details-content{
-        font-family: sans-serif;
-        font-weight: bold;
-        color: aliceblue;
-        font-size: 35px;
-        text-align: center; 
-}    
-#details-main-info-table{
-        height: 460px;
-        width: 580px;
-        margin: 0 auto;
-        padding-top: 5px;
-        margin-bottom: 2px;
-        border-radius: 40px;
-        border-color: pink;
-        border-color: pink;
-        border-width: 2px;
-        border-style: dashed;    
-}
-#table1{
-        background-color: bisque;
-        height: 440px;
-        width: 480px;
-        border-color: pink;
-        border-width: 4px;
-        border-style: solid;
-        font-size: 18px;
-        font-family: sans-serif;
-        margin: 0 auto;
-    }   
+  <!-- Primary SEO -->
+  <title>Mayank Kumar Khurmai — Data Engineer | AWS · Spark · DBT · Airflow</title>
+  <meta name="description" content="Mayank Kumar Khurmai is a certified Data Engineer with 3+ years of experience building scalable data lakehouses, ETL pipelines, and Data Vault 2.0 models on AWS, GCP, and Azure using Python, Spark, SQL, DBT, and Airflow." />
+  <meta name="keywords" content="Mayank Khurmai, Data Engineer, AWS Data Engineer, Apache Spark, DBT, Airflow, Data Vault 2.0, ETL, Data Lakehouse, Python, SQL, BigQuery, Redshift, Databricks, GCP, Azure" />
+  <meta name="author" content="Mayank Kumar Khurmai" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mayankkhurmai.in/" />
 
-td{
-        border-bottom-color: grey;
-        border-bottom-width: 1px;
-        border-bottom-style: dashed;
-        font-size: 18px;
-        text-decoration: none;
-        font-family: sans-serif;
-        margin: 0 auto;
-    }
-#td1{
-        border-bottom-color: grey;
-        border-bottom-width: 1px;
-        border-bottom-style: dashed;
-        border-bottom-width: 50%;
-        font-size: 18px;
-        color: white;
-        text-decoration: none;
-        font-family: sans-serif;
-        margin: 0 auto;
-    }    
-#more-button-div{
-        height: 60px;
-        width: 580px;
-        margin: 0 auto;
-        margin-bottom: 2px;
-        border-radius: 20px;
-        border-color: pink;
-        border-width: 2px;
-        border-style: dashed;    
-}
-#more-button{
-        height: 50px;
-        width: 100px;
-        margin-top: 2px;
-        font-size: 20px;
-        font-weight: bold;
-        font-family: fantasy;
-        align-content: center;
-        margin-left: 43%;
-        border-radius: 5px;
-        border-color: red;
-        border-width: 1px;
-        border-style: solid;    
-}
-#after-click-more{
-        height: 700px;
-        width: 95%;
-        margin: 0 auto;
-        border-radius: 20px;    
-}
-#after-click-more-side1{
-        height: 680px;
-        width: 27%;
-        margin: 0 auto;
-        float: left;
-        border-radius: 20px;
-        border-color: red;
-        border-width: 4px;
-        border-style: double;    
-}  
-#after-click-more-side1-upper{
-        height: 250px;
-        width: 98%;
-        margin: 0 auto;
-        border-radius: 10px;   
-}
-#fa-address-book{
-        margin: 0 auto;
-        margin-top: 30px;
-        margin-left: 25%;
-        font-size: 200px;
-        color: white;
-        float: left;
-    }  
-#fa-table{
-        margin: 20px;
-        margin-left: 7px;
-        font-size: 20px;
-    color: white;
-        float: left;
-    }    
-#after-click-more-side1-lower{
-        height: 400px;
-        width: 98%;
-        margin: 0 auto;
-        border-radius: 10px;  
-}    
-#table2{
-        height: 410px;
-        width: 90%;
-        font-size: 18px;
-        font-family: sans-serif;
-        margin: 0 auto;
-    }    
-#after-click-more-side2{
-        height: 680px;
-        width: 73%;
-        margin: 0 auto;
-        float: left;
-        border-radius: 20px;
-        border-color: red;
-        border-width: 4px;
-        border-style: double;    
-}    
-#side2-three{
-        height: 220px;
-        width: 96%;
-        margin: 0 auto;   
-}
-#side2-three-one-header{
-        height: 50px;
-        width: 98%;
-        margin: 0 auto;   
-}    
-#side2-three-one-footer{
-        height: 170px;
-        width: 98%;
-        padding: 0px;
-        margin: 0 auto;    
-}
-#fa-skill{
-        margin: 10px;
-        font-size: 30px;
-        color: white;
-        float: left;
-    }    
-#skill-text{
-        margin-top: 12px;
-        float: left;
-        color: white;
-    }  
-hr{
-        color: white;
-        width: 90%;
-        border-style: dashed;
-    }     
-ul{
-        margin: 0px;
-        margin-top: 10px;
-        padding: 0px;
-        font-size: 20px;
-        color: white;
-        float: left;
-    } 
- li{
-        margin-left: 0px;
-        font-size: 20px;
-        color: white;
-        float: left;
-        clear: left;
-    }    
-    
-    
-</style>    
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mayankkhurmai.in/" />
+  <meta property="og:title" content="Mayank Kumar Khurmai — Data Engineer" />
+  <meta property="og:description" content="Certified Data Engineer with 3+ years building scalable data platforms on AWS, GCP & Azure. Python · Spark · SQL · DBT · Airflow." />
+  <meta property="og:image" content="https://mayankkhurmai.in/mayank_khurmai.png" />
+  <meta property="og:image:alt" content="Mayank Kumar Khurmai — Data Engineer" />
+  <meta property="og:site_name" content="Mayank Khurmai" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mayank Kumar Khurmai — Data Engineer" />
+  <meta name="twitter:description" content="Certified Data Engineer with 3+ years building scalable data platforms on AWS, GCP & Azure." />
+  <meta name="twitter:image" content="https://mayankkhurmai.in/mayank_khurmai.png" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="mayank_khurmai.png" />
+  <link rel="apple-touch-icon" href="mayank_khurmai.png" />
+
+  <!-- Fonts (preconnected for speed) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Structured data for rich search results -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mayank Kumar Khurmai",
+    "jobTitle": "Data Engineer",
+    "url": "https://mayankkhurmai.in/",
+    "image": "https://mayankkhurmai.in/mayank_khurmai.png",
+    "email": "mailto:mayankkhurmai8@gmail.com",
+    "telephone": "+91-9720315564",
+    "worksFor": { "@type": "Organization", "name": "LUMIQ" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Ajay Kumar Garg Engineering College, Ghaziabad" },
+      { "@type": "EducationalOrganization", "name": "WAP Institute" }
+    ],
+    "knowsAbout": ["Data Engineering","Apache Spark","DBT","Airflow","Data Vault 2.0","AWS","GCP","Azure","Python","SQL","ETL","Data Lakehouse"],
+    "sameAs": [
+      "https://in.linkedin.com/in/mayank-khurmai",
+      "https://github.com/mayank-khurmai",
+      "https://www.instagram.com/mayank_khurmai/"
+    ]
+  }
+  </script>
 </head>
-            
-<body bgcolor="black">
-    
- 
-        
-<div id="outer-box">
- 
-<h1 id="portfolio-heading">Portfolio</h1> 
-    
-<div id="profile-pic-div">
-</div>
-    
-<div id="main-content">
-  <div id="details-content-div">
-  <h1 id="details-content">Details Content</h1>
-  </div> 
-  <div id="details-main-info-table">
-      <table id="table1">
-      <tr>
-      <td>Name</td>
-      <td>Mayank Kumar Khurmai</td>
-      </tr>
-      <tr>
-      <td>Roll.No.</td>
-      <td>1802710064</td>
-      </tr>
-      <tr>
-      <td>Student No.</td>
-      <td>1810135</td>
-      </tr>
-      <tr>
-      <td>Year</td>
-      <td>2nd</td>
-      </tr>
-      <tr>
-      <td>Branch</td>
-      <td>Computer Science</td>
-      </tr>
-      <tr>
-      <td>Mobile No.</td>
-      <td>9720315564</td>
-      </tr>      
-      </table>
-    </div>
-    <div id="more-button-div">
-        <a href="#after-click-more"><button id="more-button">More....</button></a>
-    </div>
-</div>
-    
-<div id="after-click-more">
 
-<div id="after-click-more-side1">
-    <div id="after-click-more-side1-upper">
-    <i class="fa fa-address-book" id="fa-address-book"></i>
-    </div>
-    <div id="after-click-more-side1-lower">
-     <table id="table2">
-      <tr>
-      <td><i class="fa fa-envelope" id="fa-table"></i></td>
-      <td id="td1">mayank8@gmail.com</td>
-      </tr>
-      <tr>
-      <td><i class="fa fa-phone" id="fa-table"></i></td>
-      <td id="td1">9720315564</td>
-      </tr>
-      <tr>
-      <td><i class="fa fa-map-marker" id="fa-table"></i></td>
-      <td id="td1">Upera - Hapur</td>
-      </tr>
-      <tr>
-      <td><i class="fa fa-globe" id="fa-table"></i></td>
-      <td id="td1">mayank_khurmai</td>
-      </tr>  
-      <tr>
-      <td><i class="fa fa-user" id="fa-table"></i></td>
-      <td id="td1">19 Years</td>
-      </tr>          
-      <tr>
-      <td><i class="fa fa-flag" id="fa-table"></i></td>
-      <td id="td1">India</td>
-      </tr>
-      </table>
-    </div>
-   
-</div>   
-<div id="after-click-more-side2">
-    
-<div id="side2-three">
-<div id="side2-three-one-header">
-<i class="fa fa-graduation-cap" id="fa-skill"></i>
-    <h2 id="skill-text">Skills :</h2>
-</div>  
-<div id="side2-three-one-footer">
-<ul type ="square">
-<li>HTML</li>    
-<li>CSS</li>
-<li>MySQL</li>
-<li>C Programming</li>
-<li>JavaScript</li>
-</ul>    
-</div>      
-</div>     
-    
-<hr>    
-    
-<div id="side2-three">
-<div id="side2-three-one-header">
-<i class="fa fa-graduation-cap" id="fa-skill"></i>
-    <h2 id="skill-text">Education :</h2>
-</div>  
-<div id="side2-three-one-footer">
-<ul type ="square">
-<li>2004-2006  :  Niskam Public School</li>
-<li>2006-18  :  Saint Anthony's School</li>    
-<li>2018-Present  :  AKGEC, Ghaziabad</li>
-</ul>    
-</div> 
-</div>
+<body>
+  <!-- Animated background -->
+  <div class="bg-aurora" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <div class="grid-overlay"></div>
+  </div>
 
-<hr>    
-    
-    <div id="side2-three">
-    <div id="side2-three-one-header">
-<i class="fa fa-language" id="fa-skill"></i>
-    <h2 id="skill-text">Language :</h2>
-</div>  
-<div id="side2-three-one-footer">
-<ul type ="square">
-<li>Hindi</li>    
-<li>English</li>
-<li>Punjabi</li>
-</ul>        
-</div>
-    </div>   
-</div>    
-</div>    
+  <a class="skip-link" href="#main">Skip to content</a>
 
-</div>
-    
-</body>    
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="brand" aria-label="Mayank Khurmai — home">
+        <span class="brand-mark">MK</span>
+        <span class="brand-text">Mayank<span class="dot">.</span>Khurmai</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certs">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme" title="Toggle theme">
+          <svg class="ic-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+          <svg class="ic-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 17a5 5 0 1 1 0-10 5 5 0 0 1 0 10Zm0-13a1 1 0 0 1-1-1V1a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1Zm0 20a1 1 0 0 1-1-1v-2a1 1 0 1 1 2 0v2a1 1 0 0 1-1 1ZM4.22 5.64a1 1 0 0 1 0-1.42l1.42-1.41a1 1 0 1 1 1.41 1.41L5.64 5.64a1 1 0 0 1-1.42 0Zm12.73 12.73a1 1 0 0 1 0-1.41l1.41-1.42a1 1 0 0 1 1.42 1.42l-1.42 1.41a1 1 0 0 1-1.41 0ZM1 13a1 1 0 0 1 0-2h2a1 1 0 1 1 0 2H1Zm20 0a1 1 0 0 1 0-2h2a1 1 0 1 1 0 2h-2ZM4.22 18.37a1 1 0 0 1 1.42 0 1 1 0 0 1 0 1.41l-1.42 1.42a1 1 0 0 1-1.41-1.42ZM16.95 5.64a1 1 0 0 1 0-1.41l1.41-1.42a1 1 0 1 1 1.42 1.42l-1.42 1.41a1 1 0 0 1-1.41 0Z"/></svg>
+        </button>
+        <a href="assets/Mayank_Khurmai_Resume.pdf" class="btn btn-ghost" download>Resume</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span> Available for opportunities</p>
+          <h1 class="hero-title">
+            Hi, I'm <span class="grad-text">Mayank Khurmai</span>
+          </h1>
+          <h2 class="hero-role">
+            <span class="prompt">&gt;</span> <span id="typed"></span><span class="caret">_</span>
+          </h2>
+          <p class="hero-sub">
+            Certified <strong>Data Engineer</strong> with <strong>3+ years</strong> designing
+            scalable data lakehouses, ETL pipelines &amp; Data Vault 2.0 models across
+            <strong>AWS, GCP &amp; Azure</strong> — turning raw data into reliable, decision-ready intelligence for BFSI leaders.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Hire me</a>
+            <a href="assets/Mayank_Khurmai_Resume.pdf" class="btn btn-outline" download>
+              Download CV
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 16l-5-5h3V4h4v7h3l-5 5Zm-7 4h14v-2H5v2Z"/></svg>
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://in.linkedin.com/in/mayank-khurmai" target="_blank" rel="noopener" aria-label="LinkedIn" class="soc">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9h4v12H3V9Zm6 0h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05C20.5 8.65 22 10.6 22 14v7h-4v-6.2c0-1.48-.03-3.38-2.06-3.38-2.06 0-2.38 1.6-2.38 3.27V21H9V9Z"/></svg>
+            </a>
+            <a href="https://github.com/mayank-khurmai" target="_blank" rel="noopener" aria-label="GitHub" class="soc">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/mayank_khurmai/" target="_blank" rel="noopener" aria-label="Instagram" class="soc">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16Zm0 1.62c-3.15 0-3.5.01-4.74.07-1.14.05-1.76.24-2.17.4-.55.21-.94.47-1.35.88-.41.41-.67.8-.88 1.35-.16.41-.35 1.03-.4 2.17-.06 1.24-.07 1.59-.07 4.74s.01 3.5.07 4.74c.05 1.14.24 1.76.4 2.17.21.55.47.94.88 1.35.41.41.8.67 1.35.88.41.16 1.03.35 2.17.4 1.24.06 1.59.07 4.74.07s3.5-.01 4.74-.07c1.14-.05 1.76-.24 2.17-.4.55-.21.94-.47 1.35-.88.41-.41.67-.8.88-1.35.16-.41.35-1.03.4-2.17.06-1.24.07-1.59.07-4.74s-.01-3.5-.07-4.74c-.05-1.14-.24-1.76-.4-2.17a3.6 3.6 0 0 0-.88-1.35 3.6 3.6 0 0 0-1.35-.88c-.41-.16-1.03-.35-2.17-.4-1.24-.06-1.59-.07-4.74-.07Zm0 2.76a5.3 5.3 0 1 1 0 10.6 5.3 5.3 0 0 1 0-10.6Zm0 1.62a3.68 3.68 0 1 0 0 7.36 3.68 3.68 0 0 0 0-7.36Zm5.5-2.9a1.24 1.24 0 1 1 0 2.48 1.24 1.24 0 0 1 0-2.48Z"/></svg>
+            </a>
+            <a href="mailto:mayankkhurmai8@gmail.com" aria-label="Email" class="soc">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 2v.4l8 5 8-5V6H4Zm16 2.5-7.47 4.67a1 1 0 0 1-1.06 0L4 8.5V18h16V8.5Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="avatar-ring">
+            <img src="profile-photo.jpg" alt="Portrait of Mayank Kumar Khurmai" width="320" height="320" loading="eager" />
+          </div>
+          <div class="float-chip chip-aws">AWS</div>
+          <div class="float-chip chip-spark">Spark</div>
+          <div class="float-chip chip-dbt">DBT</div>
+          <div class="float-chip chip-air">Airflow</div>
+        </div>
+      </div>
+      <a href="#stats" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats" id="stats">
+      <div class="container stats-grid">
+        <div class="stat reveal">
+          <span class="stat-num" data-target="3" data-suffix="+">0</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num" data-target="8" data-suffix="+">0</span>
+          <span class="stat-label">BFSI Clients Served</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num" data-target="20" data-suffix="+">0</span>
+          <span class="stat-label">Production APIs</span>
+        </div>
+        <div class="stat reveal">
+          <span class="stat-num" data-target="7" data-suffix="">0</span>
+          <span class="stat-label">Cloud Certifications</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section-kicker reveal">01 — About</p>
+        <h2 class="section-title reveal">Engineering data that businesses trust</h2>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a <strong>certified Data Engineer</strong> based in India with over
+              <strong>three years</strong> of hands-on experience designing and operating modern data
+              platforms for <strong>8+ leading BFSI clients</strong> — including major insurance firms,
+              banks, and asset management companies.
+            </p>
+            <p>
+              At <strong>LUMIQ</strong>, I build scalable data lakehouses, warehouses and data marts on
+              AWS, Azure and GCP, author <strong>Data Vault 2.0</strong> models with DBT and PySpark, and
+              automate ingestion &amp; reporting with Apache Airflow — cutting data-retrieval time by 40%
+              and boosting processing speed by 80% while reducing operational cost by 50%.
+            </p>
+            <p>
+              I care about reliability, traceability and clean architecture — pipelines that are
+              observable, compliance-ready, and built to scale.
+            </p>
+            <div class="about-meta">
+              <div><span>Location</span>India</div>
+              <div><span>Experience</span>3+ Years</div>
+              <div><span>Role</span>Data Engineer @ LUMIQ</div>
+              <div><span>Email</span><a href="mailto:mayankkhurmai8@gmail.com">mayankkhurmai8@gmail.com</a></div>
+            </div>
+          </div>
+          <aside class="about-card reveal">
+            <h3>What I do</h3>
+            <ul class="do-list">
+              <li><b>Data Architecture</b><span>Lakehouses, warehouses &amp; data marts</span></li>
+              <li><b>ETL / ELT Pipelines</b><span>Spark, DBT &amp; Airflow orchestration</span></li>
+              <li><b>Data Modelling</b><span>Data Vault 2.0 &amp; dimensional models</span></li>
+              <li><b>Cloud Engineering</b><span>AWS · GCP · Azure deployments</span></li>
+              <li><b>APIs &amp; Automation</b><span>Secure, tokenized production APIs</span></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section alt" id="skills">
+      <div class="container">
+        <p class="section-kicker reveal">02 — Skills</p>
+        <h2 class="section-title reveal">My technical toolkit</h2>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <h3><span class="sk-ic">&lt;/&gt;</span> Languages</h3>
+            <div class="chips"><span>Python</span><span>SQL</span><span>PHP</span></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="sk-ic">🗄️</span> Databases</h3>
+            <div class="chips"><span>MySQL</span><span>PostgreSQL</span><span>BigQuery</span><span>Redshift</span><span>Databricks</span><span>DuckDB</span></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="sk-ic">⚙️</span> Tools</h3>
+            <div class="chips"><span>Apache Spark</span><span>DBT</span><span>Airflow</span><span>Docker</span></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="sk-ic">☁️</span> Cloud Platforms</h3>
+            <div class="chips"><span>AWS</span><span>GCP</span><span>Azure</span></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="sk-ic">📊</span> Analytics</h3>
+            <div class="chips"><span>Data Vault</span><span>Data Modelling</span><span>Query Optimization</span></div>
+          </div>
+          <div class="skill-card reveal">
+            <h3><span class="sk-ic">✦</span> Familiar With</h3>
+            <div class="chips"><span>Kafka</span><span>Real-time Streaming</span><span>Power BI</span><span>QuickSight</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <p class="section-kicker reveal">03 — Experience</p>
+        <h2 class="section-title reveal">Where I've made an impact</h2>
+        <div class="timeline">
+          <article class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3>Data Engineer</h3>
+                <span class="tl-company">LUMIQ</span>
+                <span class="tl-date">Jun 2022 — Present</span>
+              </div>
+              <p class="tl-note">Worked with 8+ leading BFSI clients — major insurance firms, banks &amp; AMCs.</p>
+              <ul class="tl-list">
+                <li>Designed scalable data architectures (lakehouses, warehouses, marts) on AWS (EC2, RDS, Redshift, EMR, Lambda), Azure &amp; GCP — cutting data-retrieval time by <b>40%</b>.</li>
+                <li>Built end-to-end <b>Data Vault 2.0</b> models with DBT, PySpark &amp; SQL, enhancing traceability and powering BI &amp; customer reporting.</li>
+                <li>Automated ingestion &amp; reporting with <b>Apache Airflow</b> and Power BI — <b>80%</b> faster processing and <b>50%</b> lower operational cost.</li>
+                <li>Developed &amp; deployed <b>20+</b> production APIs with encrypted auth and dynamic tokenization.</li>
+                <li>Implemented Spark SQL validation &amp; reconciliation on large transactional datasets, catching anomalies early.</li>
+                <li>Led cross-functional teams and mentored junior engineers to deliver on time.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="tl-card">
+              <div class="tl-head">
+                <h3>B.Tech, Computer Science &amp; Engineering</h3>
+                <span class="tl-company">Ajay Kumar Garg Engineering College, Ghaziabad</span>
+                <span class="tl-date">2018 — 2022</span>
+              </div>
+              <p class="tl-note">Concurrent: Advanced Diploma in Software Engineering — WAP Institute (2018–2021).</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section alt" id="projects">
+      <div class="container">
+        <p class="section-kicker reveal">04 — Projects</p>
+        <h2 class="section-title reveal">Selected work</h2>
+        <p class="section-lead reveal">Representative platforms I've engineered. <em>(Client details generalized for confidentiality — replace with your own write-ups anytime.)</em></p>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="pc-top"><span class="pc-tag">Data Platform</span></div>
+            <h3>BFSI Data Lakehouse</h3>
+            <p>Multi-cloud lakehouse on AWS/Azure/GCP unifying sales, operations &amp; compliance data with 40% faster retrieval for reporting.</p>
+            <div class="chips small"><span>AWS</span><span>Redshift</span><span>EMR</span><span>Spark</span></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="pc-top"><span class="pc-tag">Data Modelling</span></div>
+            <h3>Data Vault 2.0 Engine</h3>
+            <p>End-to-end Data Vault models in DBT + PySpark giving full lineage &amp; traceability for analytics and customer reporting.</p>
+            <div class="chips small"><span>DBT</span><span>PySpark</span><span>SQL</span></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="pc-top"><span class="pc-tag">Automation</span></div>
+            <h3>Airflow Ingestion Suite</h3>
+            <p>Metadata-driven, dynamic ingestion &amp; reporting orchestrated with Airflow — 80% faster processing, 50% lower cost.</p>
+            <div class="chips small"><span>Airflow</span><span>Python</span><span>Power BI</span></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="pc-top"><span class="pc-tag">APIs</span></div>
+            <h3>Secure Data API Layer</h3>
+            <p>20+ production APIs with encrypted authentication &amp; dynamic tokenization, with monitoring for operational reliability.</p>
+            <div class="chips small"><span>REST</span><span>Tokenization</span><span>Postman</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="section" id="certs">
+      <div class="container">
+        <p class="section-kicker reveal">05 — Certifications</p>
+        <h2 class="section-title reveal">Credentials &amp; certifications</h2>
+        <div class="cert-grid">
+          <div class="cert reveal"><span class="cert-badge">AWS</span><p>Certified Data Analytics – Specialty</p></div>
+          <div class="cert reveal"><span class="cert-badge">AWS</span><p>Solutions Architect – Associate</p></div>
+          <div class="cert reveal"><span class="cert-badge">AWS</span><p>Certified Developer – Associate</p></div>
+          <div class="cert reveal"><span class="cert-badge">AWS</span><p>Certified Cloud Practitioner</p></div>
+          <div class="cert reveal"><span class="cert-badge gcp">GCP</span><p>Associate Cloud Engineer</p></div>
+          <div class="cert reveal"><span class="cert-badge gcp">GCP</span><p>Cloud Digital Leader</p></div>
+          <div class="cert reveal"><span class="cert-badge sec">EC</span><p>Certified Ethical Hacker (CEHv11)</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section alt" id="contact">
+      <div class="container contact-wrap">
+        <p class="section-kicker reveal">06 — Contact</p>
+        <h2 class="section-title reveal">Let's build something with your data</h2>
+        <p class="section-lead reveal">Open to data engineering roles, consulting &amp; collaborations. The fastest way to reach me is email or LinkedIn.</p>
+        <div class="contact-actions reveal">
+          <a class="btn btn-primary" href="mailto:mayankkhurmai8@gmail.com">Email me</a>
+          <a class="btn btn-outline" href="https://in.linkedin.com/in/mayank-khurmai" target="_blank" rel="noopener">Connect on LinkedIn</a>
+        </div>
+        <div class="contact-cards reveal">
+          <a href="mailto:mayankkhurmai8@gmail.com" class="cc">
+            <span class="cc-label">Email</span><span class="cc-val">mayankkhurmai8@gmail.com</span>
+          </a>
+          <a href="tel:+919720315564" class="cc">
+            <span class="cc-label">Phone</span><span class="cc-val">+91 97203 15564</span>
+          </a>
+          <a href="https://github.com/mayank-khurmai" target="_blank" rel="noopener" class="cc">
+            <span class="cc-label">GitHub</span><span class="cc-val">@mayank-khurmai</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Mayank Kumar Khurmai</span>
+      <div class="footer-socials">
+        <a href="https://in.linkedin.com/in/mayank-khurmai" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/mayank-khurmai" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.instagram.com/mayank_khurmai/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+      <a href="#home" class="to-top" aria-label="Back to top">↑ Top</a>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js" defer></script>
+</body>
 </html>
