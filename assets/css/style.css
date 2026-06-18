@@ -185,7 +185,9 @@ img { max-width: 100%; display: block; }
 .avatar-ring { position: relative; width: clamp(240px, 30vw, 330px); aspect-ratio: 1; border-radius: 50%; padding: 6px;
   background: var(--accent-grad); box-shadow: 0 0 70px -10px rgba(139, 92, 246, 0.55); animation: floaty 6s var(--ease) infinite alternate; }
 .avatar-ring::before { content: ""; position: absolute; inset: -14px; border-radius: 50%; border: 1px dashed var(--border); animation: spin 26s linear infinite; }
-.avatar-ring img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; background: var(--bg-2); }
+.avatar-ring::after { content: ""; position: absolute; inset: 6px; border-radius: 50%; pointer-events: none; box-shadow: inset 0 0 55px 14px rgba(5, 6, 10, 0.6); }
+[data-theme="light"] .avatar-ring::after { box-shadow: inset 0 0 45px 12px rgba(20, 30, 60, 0.28); }
+.avatar-ring img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; border-radius: 50%; background: var(--bg-2); }
 @keyframes floaty { to { transform: translateY(-16px); } }
 @keyframes spin { to { transform: rotate(360deg); } }
 
@@ -241,7 +243,9 @@ img { max-width: 100%; display: block; }
 .skill-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; transition: all 0.3s var(--ease); }
 .skill-card:hover { transform: translateY(-6px); border-color: color-mix(in srgb, var(--violet) 45%, transparent); box-shadow: var(--shadow); }
 .skill-card h3 { font-size: 1.1rem; display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
-.sk-ic { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 9px; background: var(--surface-2); border: 1px solid var(--border); font-size: 15px; font-family: 'JetBrains Mono', monospace; }
+.sk-ic { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 10px; background: var(--surface-2); border: 1px solid var(--border); color: var(--cyan); transition: all 0.3s var(--ease); }
+.sk-ic svg { width: 19px; height: 19px; }
+.skill-card:hover .sk-ic { background: color-mix(in srgb, var(--cyan) 14%, transparent); border-color: color-mix(in srgb, var(--cyan) 35%, transparent); }
 .chips { display: flex; flex-wrap: wrap; gap: 8px; }
 .chips span { font-size: 13px; font-weight: 500; padding: 6px 12px; border-radius: 8px; background: var(--surface-2); border: 1px solid var(--border); color: var(--text-dim); transition: all 0.2s var(--ease); }
 .skill-card:hover .chips span { border-color: color-mix(in srgb, var(--cyan) 30%, var(--border)); }
@@ -263,6 +267,16 @@ img { max-width: 100%; display: block; }
 .tl-list li { position: relative; padding-left: 22px; color: var(--text-dim); font-size: 14.5px; }
 .tl-list li::before { content: "▹"; position: absolute; left: 0; color: var(--cyan); }
 .tl-list b { color: var(--text); }
+
+/* ---------- Education ---------- */
+.edu-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.edu-card { display: flex; gap: 18px; align-items: flex-start; padding: 26px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); transition: all 0.3s var(--ease); }
+.edu-card:hover { transform: translateY(-6px); border-color: color-mix(in srgb, var(--cyan) 45%, transparent); box-shadow: var(--shadow); }
+.edu-icon { flex-shrink: 0; width: 52px; height: 52px; display: grid; place-items: center; border-radius: 14px; background: var(--surface-2); border: 1px solid var(--border); color: var(--cyan); }
+.edu-icon svg { width: 26px; height: 26px; }
+.edu-body h3 { font-size: 1.12rem; margin-bottom: 6px; }
+.edu-org { display: block; color: var(--text-dim); font-size: 14px; }
+.edu-date { display: inline-block; margin-top: 8px; font-family: 'JetBrains Mono', monospace; font-size: 12.5px; color: var(--cyan); background: color-mix(in srgb, var(--cyan) 10%, transparent); border: 1px solid color-mix(in srgb, var(--cyan) 28%, transparent); padding: 3px 10px; border-radius: 999px; }
 
 /* ---------- Projects ---------- */
 .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
@@ -289,10 +303,11 @@ img { max-width: 100%; display: block; }
 .contact-wrap .section-title, .contact-wrap .section-lead { margin-left: auto; margin-right: auto; }
 .contact-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-bottom: 36px; }
 .contact-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 760px; margin: 0 auto; }
-.cc { display: flex; flex-direction: column; gap: 4px; padding: 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); transition: all 0.3s var(--ease); }
+.cc { display: flex; flex-direction: column; gap: 4px; padding: 20px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); transition: all 0.3s var(--ease); }
 .cc:hover { transform: translateY(-4px); border-color: var(--cyan); }
 .cc-label { font-size: 12px; color: var(--text-mute); text-transform: uppercase; letter-spacing: 0.06em; }
-.cc-val { font-size: 14.5px; font-weight: 600; color: var(--text); word-break: break-word; }
+.cc-val { font-size: 14px; font-weight: 600; color: var(--text); overflow-wrap: anywhere; word-break: normal; line-height: 1.4; }
+.cc-val.email { font-size: 13px; letter-spacing: -0.01em; }
 
 /* ---------- Footer ---------- */
 .footer { border-top: 1px solid var(--border); padding: 28px 0; background: var(--bg-2); }
@@ -318,7 +333,7 @@ img { max-width: 100%; display: block; }
   .cert-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 960px) {
   .nav-links {
     position: fixed; top: 84px; left: 16px; right: 16px;
     flex-direction: column; gap: 4px; padding: 14px;
@@ -330,12 +345,12 @@ img { max-width: 100%; display: block; }
   .nav-links.open { transform: none; opacity: 1; pointer-events: auto; }
   .nav-links a { padding: 12px 16px; }
   .menu-toggle { display: flex; }
-  .nav-actions .btn-ghost { display: none; }
 }
 
 @media (max-width: 560px) {
   .section { padding: 70px 0; }
-  .projects-grid, .contact-cards { grid-template-columns: 1fr; }
+  .nav-actions .btn-ghost { display: none; }
+  .projects-grid, .contact-cards, .edu-grid { grid-template-columns: 1fr; }
   .about-meta { grid-template-columns: 1fr; }
   .tl-date { margin-left: 0; }
   .float-chip { display: none; }

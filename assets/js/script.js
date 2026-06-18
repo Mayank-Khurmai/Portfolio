@@ -54,7 +54,7 @@
   var typed = document.getElementById("typed");
   if (typed) {
     var phrases = [
-      "Data Engineer",
+      "Senior Data Engineer",
       "ETL Pipeline Architect",
       "Cloud Data Specialist (AWS · GCP · Azure)",
       "Data Vault 2.0 Modeler",

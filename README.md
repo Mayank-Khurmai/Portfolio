@@ -1,6 +1,6 @@
 # Mayank Kumar Khurmai — Portfolio
 
-Personal portfolio of **Mayank Kumar Khurmai**, Data Engineer.
+Personal portfolio of **Mayank Kumar Khurmai**, Senior Data Engineer.
 Live at **[mayankkhurmai.in](https://mayankkhurmai.in/)**.
 
 Ultra-modern, fully responsive, dependency-free static site (no build step) —
@@ -21,19 +21,19 @@ deploys directly via GitHub Pages.
 
 ## Structure
 ```
-index.html              Main single-page portfolio
-404.html                Custom not-found page
+index.html               Main single-page portfolio
+404.html                 Custom not-found page
 robots.txt / sitemap.xml SEO
-CNAME                   Custom domain (mayankkhurmai.in)
+CNAME                     Custom domain (mayankkhurmai.in)
+portal.html / docs.html  Standalone redirect utilities
 assets/
-  css/style.css         All styles
-  js/script.js          All interactions
-  Mayank_Khurmai_Resume.pdf
-mayank_khurmai.png      Favicon / social share image
-profile-photo.jpg       Hero portrait
-index-old.html          Previous version (archived)
-Angular-Portfolio/      Earlier Angular experiment (archived)
+  css/style.css           All styles
+  js/script.js            All interactions
+  mayank-hero.jpg         Hero portrait + favicon + social share image
+  Mayank_Khurmai_Resume.pdf  Downloadable CV
 ```
+
+To update the resume, replace `assets/Mayank_Khurmai_Resume.pdf`.
 
 ## Local preview
 ```bash
